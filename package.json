@@ -4,7 +4,7 @@
   "description": "A suprise for her",
   "main": "index.html",
   "scripts": {
-    "build": "npm run build"
+    "build": ""
   },
   "keywords": [],
   "author": "Kamsicho_",
