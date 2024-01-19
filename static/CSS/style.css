@@ -1,9 +1,13 @@
+html{
+    height: 100%;
+}
+
 body{
     user-select: none;
     background-color: #f8f8f8;
     font-family: 'Monotype Corsiva';
     color: #c80808;
-    min-height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +26,7 @@ body{
     padding: 30px;
     background-color: #c80808c8;
     color: #f8f8f8;
-    text-shadow: #00000048 4px 1px;
+    text-shadow: #00000048 .1rem .05rem;
     border-radius: 12px;
     transform-style: preserve-3d;
     opacity: 1;
