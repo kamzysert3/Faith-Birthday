@@ -4,7 +4,7 @@
   "description": "A suprise for her",
   "main": "index.html",
   "scripts": {
-    "build": "mkdir -p dist && cp -R * dist"
+    "build": "npm run build"
   },
   "keywords": [],
   "author": "Kamsicho_",
