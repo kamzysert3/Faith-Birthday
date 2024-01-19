@@ -5,14 +5,14 @@ html{
 body{
     user-select: none;
     background-color: #f8f8f8;
-    font-family: 'Monotype Corsiva';
+    font-family: 'Monotype Corsiva', serif;
     color: #c80808;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     perspective: 800px;
-    transition: .6s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 .message {
@@ -25,16 +25,12 @@ body{
     aspect-ratio: 16/9;
     padding: 30px;
     background-color: #c80808c8;
+    backdrop-filter: blur(10px);
     color: #f8f8f8;
     text-shadow: #00000048 .1rem .05rem;
     border-radius: 12px;
     transform-style: preserve-3d;
     opacity: 1;
-}
-
-.disappear{
-    opacity: 0;
-    display: none;
 }
 
 .hidden{
@@ -57,7 +53,7 @@ body{
 }
 
 .greeting{
-    width: clamp(100px, 40%, 400px);
+    width: fit-content;
     aspect-ratio: 16/9;
     margin: 150px 0 0 0;
     display: flex;
@@ -66,7 +62,8 @@ body{
     color: #f8f8f8;
     text-shadow: #00000048 2px 1px;
     font-size: min(105px, 10vw);
-    font-family: 'cooper black';
+    font-family: "cooper-black-std", serif;
+    font-weight: 800;
     z-index: 3;
 }
 
