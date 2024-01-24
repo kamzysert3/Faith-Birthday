@@ -15,6 +15,8 @@ let messages = [
 ];
 
 async function Animations() {
+  await fadeIn()
+  await delay(500)
   for (let i = 0; i < messages.length; i++) {
     await typeMessage(messages[i]);
     await delay(2000)
@@ -54,6 +56,22 @@ async function removeMessage() {
 
 async function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms))
+}
+
+async function fadeIn() {
+  return new Promise((resolve) => {
+    let currentOpacity = 0;
+
+    let fadeTimer = setInterval(() => {
+      if (currentOpacity <= 1) {
+        currentOpacity += 0.01;
+        messageDiv.style.opacity = currentOpacity.toString();
+      } else {
+        clearInterval(fadeTimer);
+        resolve();
+      }
+    }, 10);
+  });
 }
 
 async function fadeOut() {

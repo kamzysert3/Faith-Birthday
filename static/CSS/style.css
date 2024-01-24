@@ -47,7 +47,7 @@ body{
     text-shadow: #00000048 .1rem .05rem;
     border-radius: 12px;
     transform-style: preserve-3d;
-    opacity: 1;
+    opacity: 0;
 }
 
 .hidden{
